@@ -2,7 +2,7 @@ import io
 
 import torch
 
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 # Bump when a request or response format changes; mismatched peers refuse to talk.
 PROTOCOL = 2
 HEADER = "X-Remote-Models-Protocol"

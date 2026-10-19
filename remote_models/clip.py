@@ -174,7 +174,7 @@ class RemoteCLIPLoader:
 
     def load(self, server_url, clip_name, type, clip_name2="none", device="default"):
         names = [clip_name] + ([clip_name2] if clip_name2 not in ("", "none", PLACEHOLDER) else [])
-        return (RemoteCLIP(client.connect(server_url, ClipKind.name, names), names, type, device),)
+        return (RemoteCLIP(client.prepare(server_url, ClipKind.name, names), names, type, device),)
 
 
 NODES = {"RemoteCLIPLoader": (RemoteCLIPLoader, "Load Remote CLIP")}

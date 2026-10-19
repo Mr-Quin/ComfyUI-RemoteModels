@@ -112,7 +112,7 @@ def list_models(url, kind, timeout=30):
     return status, note, fetch_json(base, f"/remote_models/{kind}/list", timeout=timeout)
 
 
-def connect(url, kind, names):
+def prepare(url, kind, names):
     if is_local(url):
         KINDS[kind].require_files(names)
         return LOCAL

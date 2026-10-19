@@ -150,7 +150,7 @@ class RemoteVAELoader:
     DESCRIPTION = "VAE that decodes and encodes on another ComfyUI instance."
 
     def load(self, server_url, vae_name):
-        url = client.connect(server_url, VaeKind.name, [vae_name])
+        url = client.prepare(server_url, VaeKind.name, [vae_name])
         info = client.run(url, VaeKind.name, {"vae_name": vae_name, "op": "info"})
         return (RemoteVAE(url, vae_name, info),)
 
