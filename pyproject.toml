@@ -1,0 +1,20 @@
+[project]
+name = "comfyui-remotemodels"
+description = "Run text encoders and VAEs on another ComfyUI instance to save VRAM, and use them like the normal loaders."
+version = "0.3.0"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["comfyui", "text encoder", "clip", "vae", "remote", "offload", "vram"]
+classifiers = ["Operating System :: OS Independent"]
+
+[project.urls]
+Repository = "https://github.com/Mr-Quin/ComfyUI-RemoteModels"
+Documentation = "https://github.com/Mr-Quin/ComfyUI-RemoteModels#readme"
+"Bug Tracker" = "https://github.com/Mr-Quin/ComfyUI-RemoteModels/issues"
+
+[tool.comfy]
+PublisherId = "mr-quin"
+DisplayName = "Remote Models"
+Icon = "https://raw.githubusercontent.com/Mr-Quin/ComfyUI-RemoteModels/main/docs/icon.png"
